@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Lou's Website</title>
-    <style>
-
-
-       
-
-       
-    </style>
     <script>
-            function toggleContent() {
-                var image = document.getElementById("featureImage");
-                image.style.display = (image.style.display === "none" || image.style.display === "") ? "block" : "none";
-            }
+        function toggleContent() {
+            var image = document.getElementById("featureImage");
+            image.style.display = (image.style.display === "none" || image.style.display === "") ? "block" : "none";
+        }
+        function toggleContent2() {
+            var initialContent = document.getElementById('init_content_for_where_am_from');
+            var alternateContent = document.getElementById('alt_content_for_where_am_from');
 
+            initialContent.classList.toggle('hidden');
+            alternateContent.classList.toggle('hidden');
+        }
+        function toggleContent3() {
+            var initialContent = document.getElementById('init_content_for_music');
+            var alternateContent = document.getElementById('alt_content_for_music');
+
+            initialContent.classList.toggle('hidden');
+            alternateContent.classList.toggle('hidden');
+        }
     </script>
+    
 </head>
 <body>
 
@@ -32,20 +39,27 @@
 
     <div class="container" >
         <h1>Welcome to My Website</h1>
-        <p>My name is Loukas Merkouris and i am so glad you found this page! <br> As you can see by going around my page i don't good relations with frontent development, but if the site is fast and responidng is because of my Software engineer skills.</p>
+
+        
+        
+        <p>
+            My name is Loukas Merkouris and i am so glad you found this page! 
+            <br> As you can see by going around my page i have don't good relations with frontent development, 
+            but if the site is fast and responding is because of my Software Engineer skills.
+            <br> Now click on the boxes and get to know me!
+        </p>
 
         <div class="feature-section">
-            <div class="feature-box">
-                <h3>Engaging Visuals</h3>
-                <p>Incorporate high-quality images and graphics to create an immersive experience.</p>
-                </div>
-            <div class="feature-box">
-                <h3>Compelling Content</h3>
-                <p>Highlight key features, services, or content offerings to captivate your audience.</p>
+            <div class="feature-box" onclick="toggleContent2()">
+                <p id="init_content_for_where_am_from">Where am i from ? </p>
+                <p id="alt_content_for_where_am_from" class="hidden">I am from a village nearby Thebes the most ancient city in greece!</p>
             </div>
+            <div class="feature-box" onclick="toggleContent3()">
+                <p id="init_content_for_music">Do i play a music instrument ? </p>
+                <p id="alt_content_for_music" class="hidden">Yes! I play the bass!</p>
+            </div> 
             <div class="feature-box" onclick="toggleContent()">
-                <h3>Click</h3>
-                <p id="initialContent">Am i too bored to buy and add a domain name ?</p>
+                <p id="initialContent">You think I am too bored to purchase and configure a domain name ?</p>
                 <img id="featureImage" src="giphy.webp" alt="Example Image">
             </div>
         </div>

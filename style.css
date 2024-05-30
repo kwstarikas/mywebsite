@@ -6,8 +6,7 @@
     color: white; /* Ensure text is readable */
 }
 
-.experience-entry .university,
-.experience-entry .department {
+.university,.department {
     font-style: italic;
     color: #555; /* Darker color for better readability */
     font-size: 1.1em; /* Slightly larger font size */
@@ -20,7 +19,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
+.container {
+  text-align: center; /* Center content inside container */
+}
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -46,13 +47,15 @@ body {
 /* Experience section styles */
 .experience-entry {
     margin-bottom: 2em;
-    padding: 1.5em;
     border: 1px solid #ccc;
-    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .experience-entry h2 {
@@ -60,6 +63,7 @@ body {
     color: #007bff;
     font-size: 1.8em;
     font-weight: bold;
+    text-align: left;
 }
 
 .experience-entry .duration {
@@ -82,6 +86,10 @@ body {
 .experience-entry p {
     margin-bottom: 1em;
     line-height: 1.6;
+    text-align: left;
+}
+.experience-entry ul {
+    text-align: left;
 }
 
 .experience-entry a {
@@ -97,6 +105,14 @@ body {
 .experience-entry a:hover {
     background-color: #007bff;
     color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    
 }
 /* Styles for About Me section */
 .about-me-section {
@@ -130,12 +146,13 @@ body {
 }
 
 .certificate {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
     background-color: #f9f9f9;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
 
 }
 
@@ -174,19 +191,19 @@ body {
     text-align: center;
 }
 
-  h1 {
+h1 {
     font-size: 3rem;
     color: #333;
     margin-bottom: 20px;
   }
 
-  p {
+p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 30px;
-  }
+}
 
-  .cta-btn {
+.cta-btn {
     display: inline-block;
     padding: 15px 30px;
     background-color: #007bff;
@@ -219,29 +236,44 @@ body {
     transition: background-color 0.3s ease;
   }
 
- .feature-box:hover {
-            background-color: #ddd;
-        }
+.feature-box:hover {
+    background-color: #ddd;
+}
 
-        .feature-box p {
-            margin: 5px 0;
-        }
- .feature-box img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            display: none; /* Initially hidden */
-        }
+.feature-box p {
+    margin: 5px 0;
+}
+.feature-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: none; /* Initially hidden */
+}
 .feature-box h3 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-  .feature-box p {
+.feature-box p {
     margin: 5px 0;
-  }
+}
 
 .hidden {
     display: none;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.photo-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
