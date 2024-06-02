@@ -1,67 +1,895 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="my_scripts.js"></script>
-    <title>Lou's Website</title>
-   
-</head>
-<body>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MW3BVQ2");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <div class="navbar" id="myNavbar">
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-        <i class="fa fa-bars"></i>
-    </a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="experience.html">Experience</a>
-        <a href="education.html">Education</a>
-    </div>
+    <meta property="og:locale" content="pt-BR" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Loukas Merkouris | Personal Portfolio" />
+    <meta property="og:site_name" content="Loukas Merkouris | Personal Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Here you can get all links to my social networks and personal informations."
+    />
+    <!-- <meta property="og:image" content="https://github.com/Lucas-Angelo.png" /> -->
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta
+      name="google-site-verification"
+      content="NB2AxCBdxkHWO3A4SCAQHOphpddd7DgOlJjuiVwGu6k"
+    />
 
-    <div class="container" >
-        <h1>Welcome to My Website</h1>
+    <title>Loukas Merkouris - Personal Portfolio</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
 
-        
-        
-        <p>
-            My name is Loukas Merkouris and i am so glad you found me! 
-            <br> As you can see by going around my page, i am neather a frontent dev nor a designer, 
-            meaning that this site,<br> it ain't much but it's honest work.
-            <br> Now click on the boxes and get to know me!
-        </p>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-        <div class="feature-section">
-            <div class="feature-box" onclick="toggleContent2()">
-                <p id="init_content_for_where_am_from">Where am i from ? </p>
-                <p id="alt_content_for_where_am_from" class="hidden">I am from a village nearby Thebes the most ancient city in greece!</p>
-            </div>
-            <div class="feature-box" onclick="toggleContent3()">
-                <p id="init_content_for_music">Do i play a music instrument ? </p>
-                <p id="alt_content_for_music" class="hidden">Yes! I play the bass!</p>
-            </div> 
-            <div class="feature-box" onclick="toggleContent()">
-                <p id="initialContent">You think I am too bored to purchase and configure a domain name ?</p>
-                <img id="featureImage" src="giphy.webp" alt="Example Image">
-            </div>
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main/style.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TCYLCCZLPT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TCYLCCZLPT");
+    </script>
+
+    <!-- =======================================================
+  * Template Name: Personal - v2.1.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MW3BVQ2"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-tops">
+      <div class="container">
+        <h1><a href="index.html">Loukas Merkouris</a></h1>
+        <h2 style="color: #fff">
+          I'm <span class="typing" style="color: #12d640"></span>
+        </h2>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active">
+              <a href="#header"> <span>Home</span></a>
+            </li>
+            <li>
+              <a href="#about"><span>About</span></a>
+            </li>
+            <li>
+              <a href="#education"> <span>Education</span></a>
+            </li>
+            <li>
+              <a href="#experience"> <span>Experience</span></a>
+            </li>
+            <!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
+            <li>
+              <a href="#portfolio"> <span>Projects</span></a>
+            </li>
+            <li>
+              <a href="#skills"> <span>Skills</span></a>
+            </li>
+            <li>
+              <a
+                href="assets/resume/PlushCV.pdf"
+                target="_blank"
+              >
+                <span>Resume</span></a
+              >
+            </li>
+            <li>
+              <a href="#links" target="_blank"> <span>Links</span></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+
+        <div class="social-links">
+          <a
+            href="mailto:loukasmerkouris@hotmail.com"
+            target="_blank"
+            class="Mail"
+            ><i class="bx bx-envelope"></i
+          >
+          <a
+            href="https://www.linkedin.com/in/loukas-merkouris/"
+            target="_blank"
+            class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://www.github.com/kwstarikas"
+            target="_blank"
+            class="github"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
-    </div>
+      </div>
+    </header>
+    <!-- End Header -->
 
-   <footer>
-        <p>Contact Information</p>
-        <div class="contact-info">
-            <a href="https://github.com/kwstarikas" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="mailto:loukasmerkouris@hotmail.com">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-            <a href="https://www.linkedin.com/in/loukas-merkouris" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <!-- ======= About Me ======= -->
+      <div class="about-me container">
+        <div class="section-title">
+          <h2>About</h2>
         </div>
-    </footer>
-</body>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="./assets/img/profile.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p>I am a dedicated Software Engineer with a passion for crafting efficient code and optimizing 
+                performance.</p>
+
+            <p>In my approach to software development, I firmly believe in the principles of scalability, 
+                efficiency, simplicity and security. I strive to design software architectures that prioritize 
+                these aspects, ensuring that the end product is not only reliable but also adaptable to
+                evolving needs.</p>
+
+            <p>My ultimate career goal is to achieve mastery in architecting and developing high-performance software systems.
+                I aspire to contribute to projects that make a meaningful impact on society, 
+                leveraging technology to improve the lives of those around me.</p>
+
+            <p>Outside of my professional endeavors, I enjoy keeping up with the latest advancements in technology, 
+                like what's the new JS framework or compiler shiped this week <span>&#128513;</span>.
+                I am enthusiastic about continuous learning and eagerly embrace new challenges to expand my skill set.</p>
+
+            <p>I am seeking opportunities to collaborate with like-minded professionals and organizations that share my vision for leveraging 
+                technology for positive change. Let's connect and create something remarkable together!</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!-- End About Me -->
+
+      <!-- ======= Interests ======= -->
+      <div class="interests container">
+        <div class="section-title">
+          <h2>Interests</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="ri-code-box-line" style="color: #ffbb2c"></i>
+              <h3>Software Development</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-settings-2-fill" style="color: #5578ff"></i>
+              <h3>Backend Development</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-window-fill" style="color: #e80368"></i>
+              <h3>Web Development</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-shield-keyhole-line" style="color: #1c7d32"></i>
+              <h3>Cyber Security</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-code-s-slash-fill" style="color: #28a745"></i>
+              <h3>Software Engineering</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #f1081f"></i>
+              <h3>Database</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-file-list-3-line" style="color: #47aeff"></i>
+              <h3>Algorithms</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-cloud-fill" style="color: #ffc107"></i>
+              <h3>Cloud</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Interests -->
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Education</h2>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-12"
+            data-aos="fade-up"
+            style="display: inline-block"
+          >
+            <div
+              class="col-md-4 mt-4 mt-md-0 ml-0 icon-box p-2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="
+                padding: 0px 0px;
+                padding-bottom: 5px;
+                display: inline-block;
+              "
+            >
+              <a href="https://www.csd.uoc.gr/" target="_blank"
+                ><img
+                  src="assets/img/education/uoc-logo.png"
+                  class="img-fluid"
+                  alt="PucMinas"
+              /></a>
+              <p style="text-align: left; color: #fff; padding: 5px 10px">
+                <em>Bachelor's Degree in Computer Science</em>
+              </p>
+              <h5 style="text-align: left; padding: 0px 10px">
+                Janurary 2012 - March 2022
+              </h5>
+              <h6 style="text-align: left; color: #fff; padding: 0px 10px">
+                Relevant Coursework
+              </h6>
+              <ul style="text-align: left; color: #fff">
+                <li>Deepening my understanding of the C language.</li>
+                <li>Designing and implementing databases.</li>
+                <li>Designing and implementing web applications.</li>
+                <li>Implementing cipher algorithms.</li>
+                <li>Building a custom compiler.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <div class="container">
+          <div class="section-title">
+            <h2>Online Certification</h2>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            style="position: relative; height: 437.75px"
+          >
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              style="position: absolute; left: 0px; top: 0px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/SaFE.png"
+                  class="img-fluid"
+                  alt="Cisco"
+                />
+                <div class="portfolio-info">
+                  <h4>Certified SAFe 6 Scrum Master</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/certifications/SaFE scrum cert.pdf"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              style="position: absolute; left: 370px; top: 0px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/SaFE.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>SAFe 5 DevOps Practitioner</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/certifications/Certified SAFe 5 DevOpspdf.pdf"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              style="position: absolute; left: 740px; top: 0px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/udemy.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Design Patterns in Python</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://www.udemy.com/certificate/UC-3b591526-db83-4a55-9c03-3df936ffe7fd/"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-project"
+              style="position: absolute; left: 370px; top: 218.875px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/udemy.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Docker for the Absolute Beginner - Hands On - DevOps</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://www.udemy.com/certificate/UC-c83db9b8-5a8e-4716-a6b4-6bd5f40c1b85/"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-project"
+              style="position: absolute; left: 740px; top: 218.875px"
+            >
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/certification/udemy.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>The Git and Github Bootcamp</h4>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://www.udemy.com/certificate/UC-9268e336-db02-4284-8e4c-6b015f3d8846/"
+                      target="_blank"
+                      title="Certificate"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Education Section -->
+
+    <!-- Start Experience Section -->
+
+    <section id="experience" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experience</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a
+                  href="https://www.avenuecode.com/"
+                  target="_blank"
+                  style="color: #12d640"
+                  >P3</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">February 2023 - Present</h5>
+              <h6 style="text-align: left">Athens, Greece</h6>
+              <p style="text-align: left; color: #fff">
+                <em>Software Engineer</em>
+              </p>
+              <ul style="text-align: left">
+                <li>Extensively design and implement APIs utilizing Django, Django REST framework, and FastAPI, showcasing a strong proficiency in creating robust, scalable services tailored to diverse business needs.</li>
+                <li>Actively contribute to the design and development of libraries that facilitate real-time data streaming, enhancing the efficiency and performance of data handling processes.</li>
+                <li>Conduct research and successfully implement communication between C and Python applications using ZeroMQ, enabling seamless data exchange and interaction between low-level and high-level programming environments.</li>
+                <li>Configured Python libraries to establish connections and facilitate message exchange between brokers, enhancing communication efficiency and reliability within the system.</li>
+                <li>Authored  unit tests and employed the Coverage tool to achieve ~100% code coverage, ensuring the highest standard of software reliability and fault tolerance.</li>
+                <li>Mentor junior backend developers, providing guidance on best practices in software development and code review.</li>
+                <li>Engage as a key member of an agile team, actively providing innovative solutions and strategic insights that drive project success.</li>
+              </ul>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a
+                  href="https://brasil.arcelormittal.com/"
+                  target="_blank"
+                  style="color: #12d640"
+                  >Hellenic Army</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">March 2022 - December 2022</h5>
+              <h6 style="text-align: left">Thebes, Greece</h6>
+              <p style="text-align: left; color: #fff">
+                <em>Mandadory Military Service</em>
+              </p>
+              <ul style="text-align: left">
+                <li>Monitor, diagnose, and resolve technical issues associated with a range of hardware and software systems.</li>
+                <li>Conscription Assistant.</li>
+              </ul>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4 style="text-align: left">
+                <a
+                  href="https://www.pucminas.br/"
+                  target="_blank"
+                  target="_blank"
+                  style="color: #12d640"
+                  >CARV-ICS-FORTH</a
+                ><br />
+              </h4>
+              <h5 style="text-align: left">September 2021 - December 2021</h5>
+              <h6 style="text-align: left">Heraklion, Greece</h6>
+              <p style="text-align: left; color: #fff">
+                <em
+                  >Research Assistant</em
+                >
+              </p>
+              <ul style="text-align: left">
+                 <li>Designed and implemented Single Sign-on (SSO) with OAuth 2.0 and OpenID Connect using Python and Django.</li>
+                <li>Extending functionality to include authentication via Lightweight Directory Access Protocol (LDAP).</li>
+                <li>Provided scalable and maintainable solution for authentication and authorization.</li>
+                <li>Facilitated secure and efficient access to multiple web applications and services.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Experience Section -->
+
+    <!-- Start Project Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Web-App</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center>
+              <h4>Mini Internet</h4>
+            </center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/internet-banner.webp"
+                class="img-fluid"
+                alt=""
+                width="100%"
+                height="100%"
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/mini_internet.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center>
+              <h4>Photobook</h4>
+            </center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/social.png"
+                class="img-fluid"
+                alt=""
+                width="100%"
+                height="100%"
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/photobook.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center>
+              <h4>Custom Compiler</h4>
+            </center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/compilation-process-in-c.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/c_compiler.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Project Section -->
+
+    <!-- Start Skills Section -->
+
+    <section id="skills" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="background: #fff; border-radius: 8px"
+            >
+              <h4 style="text-align: left; color: #09203a">
+                Languages and Databases
+              </h4>
+              <p style="text-align: left">
+                <img
+                  src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg"
+                  alt="upload.wikimedia.org"
+                  height="60"
+                  width="90"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg"
+                  alt="upload.wikimedia.org"
+                  height="60"
+                  width="90"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"
+                  alt="vectorlogo.zone"
+                  height="50"
+                  width="120"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/rust-lang/rust-lang-ar21.svg"
+                  alt="vectorlogo.zone"
+                  height="50"
+                  width="120"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-ar21.svg"
+                  alt="vectorlogo.zone"
+                  height="50"
+                  width="120"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg"
+                  alt="vectorlogo.zone"
+                  height="70"
+                  width="130"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/sqlite/sqlite-ar21.svg"
+                  alt="vectorlogo.zone"
+                  height="70"
+                  width="130"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg"
+                  alt="vectorlogo.zone"
+                  height="50"
+                  width="190"
+                />
+              </p>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="lefade-up"
+              data-aos-delay="100"
+              style="background: #fff; border-radius: 8px"
+            >
+              <h4 style="text-align: left; color: #09203a">Frameworks</h4>
+              <p style="text-align: left">
+                <img
+                src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg"
+                alt="vectorlogo.zone"
+                />
+                <img
+                src="https://upload.vectorlogo.zone/logos/djangoproject/images/3a96fc19-0d1b-43de-86d6-5e506122ea1d.svg"
+                alt="vectorlogo.zone"
+                width="150px" height="90px"
+                />
+                <img
+                src="https://upload.vectorlogo.zone/logos/djangoproject/images/987d061e-1b91-4e4a-aa41-e6fc343d2cd7.svg"
+                alt="vectorlogo.zone"
+                width="200px" height="90px"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                
+              </p>
+            </div>
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="lefade-up"
+              data-aos-delay="100"
+              style="background: #fff; border-radius: 8px"
+            >
+              <h4 style="text-align: left; color: #09203a">Tools</h4>
+              <p style="text-align: left">
+                <img
+                  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg"
+                  alt="vectorlogo.zone"
+                />
+                 <img
+                  src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg"
+                  alt="vectorlogo.zone"
+                /> <img
+                  src="https://www.vectorlogo.zone/logos/agilecraft/agilecraft-ar21.svg"
+                  alt="vectorlogo.zone"
+                /> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Skills Section -->
+
+    <!-- Start Links Section -->
+
+    <section id="links" class="services">
+      <div id="container">
+          <img
+            class="profile"
+            src="assets/img/profile.png"
+            alt="Profile"
+          />
+        </a>
+
+        <div class="links-container">
+          <strong class="description">Getting in touch! 👋</strong>
+          <a
+            class="link"
+            href="https://github.com/kwstarikas"
+            target="_blank"
+          >
+            <img
+              class="logo"
+              src="./assets/img/links/github.svg"
+              alt="GitHub Logo"
+            />
+            GitHub
+          </a>
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/loukas-merkouris/"
+            target="_blank"
+          >
+            <img
+              class="logo"
+              src="./assets/img/links/linkedin.svg"
+              alt="Linkedin Logo"
+            />
+            Linkedin
+          </a>
+          <a
+            class="link"
+            href="mailto:loukasmerkouris@hotmail.com"
+            target="_blank"
+          >
+            <img
+              class="logo"
+              src="./assets/img/links/mail.svg"
+              alt="Mail Logo"
+            />
+            E-Mail
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- End Links Section -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".typing", {
+        strings: [
+          "Software engineer",
+          "Coder",
+          "Backend developer",
+        ],
+        loop: true,
+        typeSpeed: 65,
+        backSpeed: 65,
+      });
+    </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
